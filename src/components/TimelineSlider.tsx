@@ -39,10 +39,8 @@ const TimelineSlider: React.FC<Props> = ({
         p: 2,
         borderRadius: 2,
         display: 'flex',
-        flexDirection: 'column',
-        gap: 1,
+        gap: 2,
       }}>
-      {/* top row: date + play/pause */}
       <Box
         sx={{
           display: 'flex',
@@ -50,19 +48,7 @@ const TimelineSlider: React.FC<Props> = ({
           alignItems: 'center',
         }}>
         <DateIndicator date={dates[selectedDateIdx]} />
-        <IconButton
-          size="small"
-          onClick={() => setAutoPlayDates(v => !v)}
-          sx={{
-            color: 'white',
-            bgcolor: 'rgba(255,255,255,0.1)',
-            '&:hover': { bgcolor: 'rgba(255,255,255,0.2)' },
-          }}>
-          {autoPlayDates ? <Pause /> : <PlayArrow />}
-        </IconButton>
       </Box>
-
-      {/* slider */}
       <Slider
         value={selectedDateIdx}
         min={0}
@@ -75,6 +61,16 @@ const TimelineSlider: React.FC<Props> = ({
           '.MuiSlider-mark': { display: 'none' }, // hide little tick marks
         }}
       />
+      <IconButton
+        size="small"
+        onClick={() => setAutoPlayDates(v => !v)}
+        sx={{
+          color: 'white',
+          bgcolor: 'rgba(255,255,255,0.1)',
+          '&:hover': { bgcolor: 'rgba(255,255,255,0.2)' },
+        }}>
+        {autoPlayDates ? <Pause /> : <PlayArrow />}
+      </IconButton>
     </Box>
   );
 };

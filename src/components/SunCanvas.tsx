@@ -13,8 +13,11 @@ interface Props {
 }
 
 const SunCanvas: React.FC<Props> = ({ canvasRef, events, spin }) => {
-  const { cameraRef, controlsRef, initialCamPos, initialTargetPos } =
-    useSunScene(canvasRef, events, spin);
+  const { cameraRef, controlsRef, initialCamPos, initialTarget } = useSunScene(
+    canvasRef,
+    events,
+    spin,
+  );
 
   const zoom = (factor: number) => {
     const camera = cameraRef.current;
@@ -45,7 +48,7 @@ const SunCanvas: React.FC<Props> = ({ canvasRef, events, spin }) => {
           const camera = cameraRef.current;
           const controls = controlsRef.current;
           const initCam = initialCamPos.current;
-          const initTgt = initialTargetPos.current;
+          const initTgt = initialTarget.current;
           const init = controls?.target.clone().multiplyScalar(0);
           // or store initial pos as before
           if (!camera || !controls || !initCam || !initTgt) return;

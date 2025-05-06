@@ -1,10 +1,10 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Box, IconButton } from '@mui/material';
+import { Box, IconButton, Typography } from '@mui/material';
 import TimelineSlider from './TimelineSlider';
 import SunCanvas from './SunCanvas';
 import { sunEvents } from '../data/sunEvents';
-import { Pause, PlayArrow,Autorenew  } from '@mui/icons-material';
+import { Pause, PlayArrow, Autorenew } from '@mui/icons-material';
 
 type Ev = { date: string; lat: number; lon: number; sizeRad: number };
 
@@ -38,6 +38,19 @@ const Dashboard: React.FC = () => {
 
   return (
     <Box sx={{ position: 'relative', height: '100vh', width: '100vw' }}>
+      <Box
+        sx={{
+          position: 'absolute',
+          top: 16 * 1.5,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 10,
+          pointerEvents: 'none',
+        }}>
+        <Typography variant="h4" sx={{ color: 'rgba(255,255,255,0.8)' }}>
+          Solar Sunspot Explorer
+        </Typography>
+      </Box>
       <IconButton
         onClick={() => setSpinSun(s => !s)}
         sx={{

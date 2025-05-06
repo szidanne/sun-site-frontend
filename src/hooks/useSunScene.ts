@@ -15,7 +15,8 @@ const initRenderer = (canvas: HTMLCanvasElement) => {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: false });
   const gl = renderer.getContext() as WebGLRenderingContext;
   const maxTex = gl.getParameter(gl.MAX_TEXTURE_SIZE) as number;
-  const w = window.innerWidth, h = window.innerHeight;
+  const w = window.innerWidth,
+    h = window.innerHeight;
   const dpr = Math.min(
     window.devicePixelRatio,
     Math.floor(maxTex / w),
@@ -30,7 +31,10 @@ const initRenderer = (canvas: HTMLCanvasElement) => {
 const initSceneCamera = () => {
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(
-    60, window.innerWidth / window.innerHeight, 0.1, 1000
+    60,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000,
   );
   camera.position.set(0, 0, 8);
   return { scene, camera };
@@ -38,7 +42,7 @@ const initSceneCamera = () => {
 
 const initControls = (
   camera: THREE.PerspectiveCamera,
-  renderer: THREE.WebGLRenderer
+  renderer: THREE.WebGLRenderer,
 ) => {
   const ctrls = new OrbitControls(camera, renderer.domElement);
   ctrls.enableDamping = true;
@@ -61,7 +65,7 @@ const makeSun = () => {
   });
   const mesh = new THREE.Mesh(
     new THREE.SphereGeometry(SUN_RADIUS, 64, 64),
-    mat
+    mat,
   );
   return mesh;
 };
@@ -72,13 +76,17 @@ const makeHalo = () => {
   canvas.width = canvas.height = size;
   const ctx = canvas.getContext('2d')!;
   const grd = ctx.createRadialGradient(
-    size/2, size/2, size*0.3,
-    size/2, size/2, size*0.5
+    size / 2,
+    size / 2,
+    size * 0.3,
+    size / 2,
+    size / 2,
+    size * 0.5,
   );
   grd.addColorStop(0, 'rgba(255,255,200,0.6)');
   grd.addColorStop(1, 'rgba(255,255,200,0)');
   ctx.fillStyle = grd;
-  ctx.fillRect(0,0,size,size);
+  ctx.fillRect(0, 0, size, size);
   const tex = new THREE.CanvasTexture(canvas);
   const sprite = new THREE.Sprite(
     new THREE.SpriteMaterial({
@@ -86,10 +94,10 @@ const makeHalo = () => {
       color: 0xffffaa,
       transparent: true,
       blending: THREE.AdditiveBlending,
-      depthWrite: false
-    })
+      depthWrite: false,
+    }),
   );
-  sprite.scale.set(5,5,1);
+  sprite.scale.set(5, 5, 1);
   return sprite;
 };
 
@@ -115,7 +123,7 @@ const makeDecalMat = () => {
 export function useSunScene(
   canvasRef: React.RefObject<HTMLCanvasElement | null>,
   events: Ev[],
-  spin = true
+  spin = true,
 ) {
   const spinRef = useRef(spin);
   const cameraRef = useRef<THREE.PerspectiveCamera>(null);
@@ -127,7 +135,9 @@ export function useSunScene(
   const currentSpots = useRef<THREE.Group>(null);
 
   // keep spinRef in sync
-  useEffect(() => { spinRef.current = spin }, [spin]);
+  useEffect(() => {
+    spinRef.current = spin;
+  }, [spin]);
 
   // mount scene, sun + halo
   useEffect(() => {
@@ -140,17 +150,17 @@ export function useSunScene(
     cameraRef.current = camera;
 
     scene.background = new THREE.TextureLoader().load(
-      '/textures/8k_stars_milky_way.jpg'
+      '/textures/8k_stars_milky_way.jpg',
     );
     scene.add(new THREE.AmbientLight(0xffffff, 0.4));
     const pt = new THREE.PointLight(0xffffff, 1);
-    pt.position.set(0,0,8);
+    pt.position.set(0, 0, 8);
     scene.add(pt);
 
     // root group
     const root = new THREE.Group();
-    root.add( makeSun() );
-    root.add( makeHalo() );
+    root.add(makeSun());
+    root.add(makeHalo());
     scene.add(root);
     sunRootRef.current = root;
 
@@ -196,26 +206,27 @@ export function useSunScene(
 
     // build new group
     const newGroup = new THREE.Group();
-    const sphere = root.children.find(c =>
-      (c as THREE.Mesh).geometry instanceof THREE.SphereGeometry
+    const sphere = root.children.find(
+      c => (c as THREE.Mesh).geometry instanceof THREE.SphereGeometry,
     ) as THREE.Mesh;
     const decalMat = makeDecalMat();
 
     for (const ev of events) {
-      const { x,y,z } = convertLatLonToXYZ(ev.lat, ev.lon, SUN_RADIUS);
-      const pos = new THREE.Vector3(x,y,z);
+      const { x, y, z } = convertLatLonToXYZ(ev.lat, ev.lon, SUN_RADIUS);
+      const pos = new THREE.Vector3(x, y, z);
       const orient = new THREE.Quaternion().setFromUnitVectors(
-        new THREE.Vector3(0,0,1), pos.clone().normalize()
+        new THREE.Vector3(0, 0, 1),
+        pos.clone().normalize(),
       );
       const euler = new THREE.Euler().setFromQuaternion(orient);
       const worldR = SUN_RADIUS * Math.sin(ev.sizeRad);
-      const dia = Math.max(worldR*2, MIN_DIAMETER);
+      const dia = Math.max(worldR * 2, MIN_DIAMETER);
 
       const geo = new DecalGeometry(
         sphere,
         pos,
         euler,
-        new THREE.Vector3(dia,dia,0.2)
+        new THREE.Vector3(dia, dia, 0.2),
       );
       const mesh = new THREE.Mesh(geo, decalMat.clone());
       mesh.material.transparent = true;
@@ -227,7 +238,7 @@ export function useSunScene(
     root.add(newGroup);
     gsap.to(
       newGroup.children.map(m => (m as THREE.Mesh).material),
-      { opacity: 1, duration: 1, ease: 'power1.inOut' }
+      { opacity: 1, duration: 1, ease: 'power1.inOut' },
     );
 
     // fade‑out & remove old
@@ -248,8 +259,8 @@ export function useSunScene(
               if (Array.isArray(m)) m.forEach(x => x.dispose());
               else m?.dispose();
             });
-          }
-        }
+          },
+        },
       );
     }
 
