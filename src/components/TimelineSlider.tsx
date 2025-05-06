@@ -19,12 +19,12 @@ const TimelineSlider: React.FC<Props> = ({
   autoPlayDates,
   setAutoPlayDates,
 }) => {
-  // if autoPlay is on, step every 2s
+  // if autoPlay is on, step every 1.5s
   useEffect(() => {
     if (!autoPlayDates) return;
     const iv = setInterval(() => {
       setSelectedDateIdx(i => (i + 1) % dates.length);
-    }, 2000);
+    }, 1500);
     return () => clearInterval(iv);
   }, [autoPlayDates, dates.length, setSelectedDateIdx]);
 

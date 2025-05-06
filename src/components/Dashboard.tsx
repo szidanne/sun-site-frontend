@@ -37,7 +37,7 @@ const Dashboard: React.FC = () => {
   if (!mounted) return null;
 
   return (
-    <Box sx={{ position: 'relative', height: '100vh', width: '100vw' }}>
+    <Box sx={{ position: 'relative', height: '100dvh', width: '100vw' }}>
       <Box
         sx={{
           position: 'absolute',
@@ -47,7 +47,9 @@ const Dashboard: React.FC = () => {
           zIndex: 10,
           pointerEvents: 'none',
         }}>
-        <Typography variant="h4" sx={{ color: 'rgba(255,255,255,0.8)' }}>
+        <Typography
+          variant="h4"
+          sx={{ color: 'rgba(255,255,255,0.8)', textAlign: 'center' }}>
           Solar Sunspot Explorer
         </Typography>
       </Box>

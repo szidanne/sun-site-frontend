@@ -29,6 +29,7 @@ const initRenderer = (canvas: HTMLCanvasElement) => {
 };
 
 const initSceneCamera = () => {
+  const isMobile = window.innerWidth < 600;
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(
     60,
@@ -36,7 +37,7 @@ const initSceneCamera = () => {
     0.1,
     1000,
   );
-  camera.position.set(0, 0, 8);
+  camera.position.set(0, 0, isMobile ? 12 : 8);
   return { scene, camera };
 };
 

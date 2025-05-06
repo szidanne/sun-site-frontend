@@ -1,6 +1,5 @@
 Thought for a second
 
-
 # Solar Sunspot Explorer
 
 Interactive 3D visualization of daily solar sunspot activity, powered by the Helioviewer API.
@@ -83,10 +82,10 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📖 How to Use
 
-* **Spin Toggle** (top‑left): play/pause the Sun’s rotation.
-* **Timeline** (bottom): drag or autoplay through available dates.
-* **Date Indicator** (next to the slider): shows the selected date.
-* **Orbit Controls** (top‑right): rotate, zoom, and pan the camera.
+- **Spin Toggle** (top‑left): play/pause the Sun’s rotation.
+- **Timeline** (bottom): drag or autoplay through available dates.
+- **Date Indicator** (next to the slider): shows the selected date.
+- **Orbit Controls** (top‑right): rotate, zoom, and pan the camera.
 
 ---
 

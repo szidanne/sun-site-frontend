@@ -39,7 +39,12 @@ const SunCanvas: React.FC<Props> = ({ canvasRef, events, spin }) => {
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
       <canvas
         ref={canvasRef}
-        style={{ display: 'block', width: '100%', height: '100%' }}
+        style={{
+          display: 'block',
+          width: '100%',
+          height: '100%',
+          aspectRatio: '1 / 1',
+        }}
       />
       <CanvasControls
         onZoomIn={() => zoom(0.8)}

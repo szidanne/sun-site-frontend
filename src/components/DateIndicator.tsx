@@ -29,7 +29,7 @@ const DateIndicator: React.FC<Props> = ({ date }) => {
         transform: 'translateX(-50%)',
         zIndex: 10,
       }}>
-      <Typography variant="h6" sx={{ mr: 1 }}>
+      <Typography variant="h6" sx={{ mr: 1, textAlign: 'center' }}>
         {pretty}
       </Typography>
       <Tooltip title="Data source: Helioviewer API v2">
