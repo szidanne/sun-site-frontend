@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Thought for a second
 
-## Getting Started
 
-First, run the development server:
+# Solar Sunspot Explorer
+
+Interactive 3D visualization of daily solar sunspot activity, powered by the Helioviewer API.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone & Install
+
+```bash
+git clone https://github.com/szidanne/sun-site-frontend.git
+npm install
+```
+
+### 2. Fetch Sunspot Data
+
+Before you fetch, remove any old snapshot:
+
+```bash
+rm -f src/scripts/hv-events.json
+```
+
+Then run the fetch script:
+
+```bash
+node src/scripts/fetchEvents.js
+```
+
+This will:
+
+1. Pull **Sunspot** (`SS`) events from the Helioviewer API v2
+2. Extract only the keys you care about (`date`, `lat`, `lon`, `sizeRad`)
+3. Write a pretty‑printed JSON array to `src/scripts/hv-events.json`
+
+Once complete, it will be imported in the data file:
+
+```bash
+src/data/sunEvents.json
+```
+
+### 3. Run the Dev Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔍 Project Structure
 
-## Learn More
+```
+.
+├── public/
+│   └── textures/            # Sun maps, spot masks, etc.
+├── src/
+│   ├── components/
+│   │   ├── CanvasControls.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── SunCanvas.tsx
+│   │   ├── TimelineSlider.tsx
+│   │   └── DateIndicator.tsx
+│   ├── data/
+│   │   └── sunEvents.json   # Fetched sunspot data
+│   ├── hooks/
+│   │   └── useSunScene.ts   # To populate the canvas
+│   ├── scripts/
+│   │   ├── fetchEvents.js   # Node script to pull from Helioviewer
+│   │   └── hv-events.json   # Raw output (auto‑deleted & regenerated)
+│   └── utils/
+│   │   ├── computeAngularRadius.ts   # Helper for sunspots sizing
+│       └── geoMath.ts       # Lat/Lon → XYZ conversion
+├── package.json
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📖 How to Use
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Spin Toggle** (top‑left): play/pause the Sun’s rotation.
+* **Timeline** (bottom): drag or autoplay through available dates.
+* **Date Indicator** (next to the slider): shows the selected date.
+* **Orbit Controls** (top‑right): rotate, zoom, and pan the camera.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ℹ️ Data Source
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Data is fetched from the [Helioviewer API v2](https://api.helioviewer.org/). All sunspot event metadata (position, size, timestamps) is provided by NASA/SDO.
+
+---
