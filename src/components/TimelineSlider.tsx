@@ -1,39 +1,79 @@
-import { Box, Slider, Typography } from '@mui/material';
+'use client';
+import React, { useEffect } from 'react';
+import { Box, Slider, IconButton } from '@mui/material';
+import { PlayArrow, Pause } from '@mui/icons-material';
+import DateIndicator from './DateIndicator';
 
 interface Props {
-  selectedEvent: number;
-  setSelectedEvent: (e: number) => void;
-  events: Ev[];
+  dates: string[];
+  selectedDateIdx: number;
+  setSelectedDateIdx: React.Dispatch<React.SetStateAction<number>>;
+  autoPlayDates: boolean;
+  setAutoPlayDates: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const TimelineSlider: React.FC<Props> = ({
-  selectedEvent,
-  setSelectedEvent,
-  events,
+  dates,
+  selectedDateIdx,
+  setSelectedDateIdx,
+  autoPlayDates,
+  setAutoPlayDates,
 }) => {
-  const marks = events.map((evt, i) => ({ value: i, label: evt.date }));
+  // if autoPlay is on, step every 2s
+  useEffect(() => {
+    if (!autoPlayDates) return;
+    const iv = setInterval(() => {
+      setSelectedDateIdx(i => (i + 1) % dates.length);
+    }, 2000);
+    return () => clearInterval(iv);
+  }, [autoPlayDates, dates.length, setSelectedDateIdx]);
+
   return (
     <Box
       sx={{
         position: 'absolute',
         bottom: 20,
-        left: '10%',
-        right: '10%',
-        bgcolor: 'rgba(0,0,0,0.5)',
+        left: '5%',
+        right: '5%',
+        bgcolor: 'rgba(0,0,0,0.6)',
         p: 2,
         borderRadius: 2,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 1,
       }}>
-      <Typography variant="body2" color="white">
-        Event Date: {events[selectedEvent].date}
-      </Typography>
+      {/* top row: date + play/pause */}
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}>
+        <DateIndicator date={dates[selectedDateIdx]} />
+        <IconButton
+          size="small"
+          onClick={() => setAutoPlayDates(v => !v)}
+          sx={{
+            color: 'white',
+            bgcolor: 'rgba(255,255,255,0.1)',
+            '&:hover': { bgcolor: 'rgba(255,255,255,0.2)' },
+          }}>
+          {autoPlayDates ? <Pause /> : <PlayArrow />}
+        </IconButton>
+      </Box>
+
+      {/* slider */}
       <Slider
-        value={selectedEvent}
+        value={selectedDateIdx}
         min={0}
-        max={events.length - 1}
+        max={dates.length - 1}
         step={1}
-        marks={marks}
-        onChange={(_, v) => setSelectedEvent(v)}
-        sx={{ color: 'primary.main' }}
+        marks={dates.map((d, i) => ({ value: i }))}
+        onChange={(_, v) => setSelectedDateIdx(v as number)}
+        sx={{
+          color: 'primary.main',
+          '.MuiSlider-mark': { display: 'none' }, // hide little tick marks
+        }}
       />
     </Box>
   );

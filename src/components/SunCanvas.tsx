@@ -9,12 +9,12 @@ import { Vector3 } from 'three';
 interface Props {
   canvasRef: React.RefObject<HTMLCanvasElement | null>;
   events: Ev[];
-  selectedIdx: number;
+  spin?: boolean;
 }
 
-const SunCanvas: React.FC<Props> = ({ canvasRef, events, selectedIdx }) => {
+const SunCanvas: React.FC<Props> = ({ canvasRef, events, spin }) => {
   const { cameraRef, controlsRef, initialCamPos, initialTargetPos } =
-    useSunScene(canvasRef, events, selectedIdx);
+    useSunScene(canvasRef, events, spin);
 
   const zoom = (factor: number) => {
     const camera = cameraRef.current;

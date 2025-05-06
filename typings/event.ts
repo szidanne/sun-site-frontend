@@ -1,1 +1,1 @@
-type Ev = { date: string; lat: number; lon: number; size: number };
+type Ev = { date: string; lat: number; lon: number; sizeRad: number };

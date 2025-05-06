@@ -1,79 +1,78 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { convertLatLonToXYZ } from '../utils/geoMath';
 import { DecalGeometry } from 'three/examples/jsm/Addons.js';
 
-gsap.registerPlugin(ScrollTrigger);
+const SUN_RADIUS = 2;
+const MIN_DIAMETER = 0.03; // tweak as needed
 
-const DEBUG = false;
-
-function checkGLError(gl: WebGLRenderingContext, stage: string) {
-  if (!DEBUG) return;
-  const err = gl.getError();
-  if (err !== gl.NO_ERROR) {
-    console.error(`🛑 WebGL error at "${stage}":`, err);
-  }
-}
-
-/**
- * Returns a CanvasTexture: a dark umbra + penumbra fading
- * to full transparency, perfect for a sunspot sprite.
- */
-function makeSunspotTexture(size = 128): THREE.CanvasTexture {
-  const canvas = document.createElement('canvas');
-  canvas.width = canvas.height = size;
-  const ctx = canvas.getContext('2d')!;
-
-  const cx = size / 2;
-  const cy = size / 2;
-  const innerR = size * 0.2; // solid dark core
-  const outerR = size * 0.5; // fade to transparent
-
-  const grad = ctx.createRadialGradient(cx, cy, innerR, cx, cy, outerR);
-  grad.addColorStop(0.0, 'rgba(0,0,0,1)'); // umbra
-  grad.addColorStop(0.6, 'rgba(0,0,0,0.6)'); // penumbra
-  grad.addColorStop(1.0, 'rgba(0,0,0,0)'); // fully transparent
-
-  ctx.fillStyle = grad;
-  ctx.fillRect(0, 0, size, size);
-
-  const tex = new THREE.CanvasTexture(canvas);
-  tex.needsUpdate = true;
-  return tex;
-}
-
-function makeHaloTexture(size = 256) {
+const generateHaloTexture = () => {
+  const size = 512;
   const canvas = document.createElement('canvas');
   canvas.width = canvas.height = size;
   const ctx = canvas.getContext('2d')!;
   const grd = ctx.createRadialGradient(
     size / 2,
-    size / 2, // center
-    size * 0.3, // inner radius
     size / 2,
-    size / 2, // center
-    size * 0.5, // outer radius
+    size * 0.3,
+    size / 2,
+    size / 2,
+    size * 0.5,
   );
-  // center is bright
   grd.addColorStop(0, 'rgba(255,255,200,0.6)');
-  // fall off to fully transparent
-  grd.addColorStop(1, 'rgba(255,255,200,0.0)');
+  grd.addColorStop(1, 'rgba(255,255,200,0)');
   ctx.fillStyle = grd;
   ctx.fillRect(0, 0, size, size);
   return new THREE.CanvasTexture(canvas);
-}
+};
 
-// Helper: initialize WebGL renderer
+const generateSunMaterial = () => {
+  const textureloader = new THREE.TextureLoader();
+
+  const colorMap = textureloader.load('/textures/8k_sun.jpg');
+  const bumpMap = textureloader.load('/textures/normal_map.png');
+
+  const sunMat = new THREE.MeshStandardMaterial({
+    map: colorMap,
+    bumpMap: bumpMap,
+    bumpScale: 0.05,
+    emissiveMap: colorMap,
+    emissive: new THREE.Color(0xffffff),
+    emissiveIntensity: 0.5,
+    roughness: 1,
+    metalness: 0,
+  });
+  return sunMat;
+};
+
+const generateDecalMaterial = () => {
+  const textureloader = new THREE.TextureLoader();
+  const spotMask = textureloader.load('/textures/sunspot_mask.png');
+  spotMask.minFilter = THREE.LinearFilter;
+  spotMask.magFilter = THREE.LinearFilter;
+  spotMask.generateMipmaps = false;
+  const decalMat = new THREE.MeshStandardMaterial({
+    color: 0x8b4513,
+    alphaMap: spotMask,
+    transparent: true,
+    depthWrite: false,
+    depthTest: true,
+    polygonOffset: true,
+    polygonOffsetFactor: -4,
+    roughness: 1,
+    metalness: 0,
+  });
+  return decalMat;
+};
+
 function initRenderer(canvas: HTMLCanvasElement) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: false });
   const gl = renderer.getContext() as WebGLRenderingContext;
   const maxTex = gl.getParameter(gl.MAX_TEXTURE_SIZE) as number;
-  const w = window.innerWidth;
-  const h = window.innerHeight;
+  const w = window.innerWidth,
+    h = window.innerHeight;
   const dpr = Math.min(
     window.devicePixelRatio,
     Math.floor(maxTex / w),
@@ -85,7 +84,6 @@ function initRenderer(canvas: HTMLCanvasElement) {
   return renderer;
 }
 
-// Helper: create scene and camera
 function initSceneCamera() {
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(
@@ -98,87 +96,6 @@ function initSceneCamera() {
   return { scene, camera };
 }
 
-// Helper: create Sun group for rotation + markers
-function initSunGroup(events: Ev[]) {
-  const group = new THREE.Group();
-  const loader = new THREE.TextureLoader();
-
-  // 1) Load your albedo, bump and emissive maps
-  const colorMap = loader.load('/textures/8k_sun.jpg');
-  const bumpMap = loader.load('/textures/normal_map.png');
-  const emissiveMap = colorMap;
-
-  // Sun mesh
-  const sunGeo = new THREE.SphereGeometry(2, 64, 64);
-  const sunMat = new THREE.MeshStandardMaterial({
-    map: colorMap,
-    bumpMap: bumpMap,
-    bumpScale: 0.05,
-    emissiveMap: emissiveMap,
-    emissive: new THREE.Color(0xffffff),
-    emissiveIntensity: 0.5,
-    roughness: 1,
-    metalness: 0,
-  });
-  const sunMesh = new THREE.Mesh(sunGeo, sunMat);
-  group.add(sunMesh);
-
-  //   halo
-  const haloTex = makeHaloTexture(512);
-  const haloMat = new THREE.SpriteMaterial({
-    map: haloTex,
-    color: 0xffffaa,
-    transparent: true,
-    blending: THREE.AdditiveBlending,
-    depthWrite: false,
-  });
-  const haloSprite = new THREE.Sprite(haloMat);
-
-  // 3) scale it so it envelopes your sun (radius=2 → diameter=4)
-  const haloSize = 5; // tweak until it looks good
-  haloSprite.scale.set(haloSize, haloSize, 1);
-
-  // 4) add it to the same group as your sun mesh
-  group.add(haloSprite);
-
-  // 5) Realistic sunspots: procedurally generate a circular gradient
-  const spotTex = makeSunspotTexture(256);
-  spotTex.minFilter = THREE.LinearMipMapLinearFilter;
-  spotTex.magFilter = THREE.LinearFilter;
-
-  const decalMat = new THREE.MeshStandardMaterial({
-    map: spotTex,
-    transparent: true,
-    depthWrite: false,
-    depthTest: true,
-    polygonOffset: true,
-    polygonOffsetFactor: -4,
-    roughness: 1,
-    metalness: 0,
-  });
-
-  // project each sunspot and collect into markers[]
-  const markers: THREE.Mesh[] = events.map(evt => {
-    const pos = new THREE.Vector3(
-      ...Object.values(convertLatLonToXYZ(evt.lat, evt.lon, 2)),
-    );
-    const normal = pos.clone().normalize();
-    const orient = new THREE.Quaternion().setFromUnitVectors(
-      new THREE.Vector3(0, 0, 1),
-      normal,
-    );
-    const euler = new THREE.Euler().setFromQuaternion(orient);
-    const size = new THREE.Vector3(evt.size * 4, evt.size * 4, 0.2);
-    const decalGeo = new DecalGeometry(sunMesh, pos, euler, size);
-    const decalMesh = new THREE.Mesh(decalGeo, decalMat);
-    group.add(decalMesh);
-    return decalMesh;
-  });
-
-  return { group, markers };
-}
-
-// Helper: init orbit controls
 function initControls(
   camera: THREE.PerspectiveCamera,
   renderer: THREE.WebGLRenderer,
@@ -193,105 +110,150 @@ function initControls(
 export function useSunScene(
   canvasRef: React.RefObject<HTMLCanvasElement | null>,
   events: Ev[],
-  selectedIdx: number,
+  spin?: boolean,
 ) {
-  const markersRef = useRef<THREE.Object3D[]>([]);
-  const groupRef = useRef<THREE.Group | null>(null);
-
+  const spinRef = useRef<boolean>(!!spin);
   const cameraRef = useRef<THREE.PerspectiveCamera>(null);
   const controlsRef = useRef<OrbitControls>(null);
   const initialCamPos = useRef<THREE.Vector3>(null);
   const initialTargetPos = useRef<THREE.Vector3>(null);
 
-  // Init on mount
+  // -- internal scene graph refs:
+  const sunRootRef = useRef<THREE.Group>(null);
+  const spotGroupRef = useRef<THREE.Group>(null);
+
+  // keep spinRef in sync
   useEffect(() => {
+    spinRef.current = !!spin;
+  }, [spin]);
+
+  // mount: build renderer, scene, sun+halo, empty spot‐group, etc.
+  useEffect(() => {
+    if (typeof document === 'undefined') return; // guard
     const canvas = canvasRef.current;
     if (!canvas) return;
+    const textureloader = new THREE.TextureLoader();
 
     const renderer = initRenderer(canvas);
     const { scene, camera } = initSceneCamera();
     cameraRef.current = camera;
 
-    const loader = new THREE.TextureLoader();
-    scene.background = loader.load('/textures/8k_stars_milky_way.jpg');
+    scene.background = textureloader.load('/textures/8k_stars_milky_way.jpg');
+    scene.add(new THREE.AmbientLight(0xffffff, 0.4));
+    const pt = new THREE.PointLight(0xffffff, 1);
+    pt.position.set(0, 0, 8);
+    scene.add(pt);
 
-    const ambient = new THREE.AmbientLight(0xffffff, 0.4);
-    const point = new THREE.PointLight(0xffffff, 1);
-    point.position.set(0, 0, 8); // place at camera (or wherever you like)
-    scene.add(ambient, point);
+    // Sun root
+    const sunRoot = new THREE.Group();
+    const sunMat = generateSunMaterial();
+    // sphere
+    const sphere = new THREE.Mesh(
+      new THREE.SphereGeometry(SUN_RADIUS, 64, 64),
+      sunMat,
+    );
+    sunRoot.add(sphere);
+    // halo
+    const haloTexture = generateHaloTexture();
+    const halo = new THREE.Sprite(
+      new THREE.SpriteMaterial({
+        map: haloTexture,
+        color: 0xffffaa,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
+      }),
+    );
+    halo.scale.set(5, 5, 1);
+    sunRoot.add(halo);
 
-    const { group, markers } = initSunGroup(events);
-    markersRef.current = markers;
-    scene.add(group);
-    groupRef.current = group;
+    // spot‐container
+    const spotGroup = new THREE.Group();
+    sunRoot.add(spotGroup);
 
+    scene.add(sunRoot);
+    sunRootRef.current = sunRoot;
+    spotGroupRef.current = spotGroup;
+
+    // controls + animate
     const controls = initControls(camera, renderer);
     controlsRef.current = controls;
 
-    // snapshot initial state once
+    // capture initial positions once
     if (!initialCamPos.current) {
       initialCamPos.current = camera.position.clone();
       initialTargetPos.current = controls.target.clone();
     }
 
-    // continuous rotation
-    function rotateSun() {
-      if (groupRef.current) groupRef.current.rotation.y += 0.0055;
-    }
-
-    // render loop
     const animate = () => {
       requestAnimationFrame(animate);
-      rotateSun();
+      // only spin when play is on
+      if (spinRef.current && sunRootRef.current) {
+        sunRootRef.current.rotation.y += 0.0055;
+      }
       controls.update();
       renderer.render(scene, camera);
     };
     animate();
 
-    // resize
     const onResize = () => {
-      const w = window.innerWidth;
-      const h = window.innerHeight;
-      camera.aspect = w / h;
+      camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(w, h, false);
+      renderer.setSize(window.innerWidth, window.innerHeight, false);
     };
     window.addEventListener('resize', onResize);
 
-    // cleanup
     return () => {
       window.removeEventListener('resize', onResize);
       renderer.dispose();
-      group.traverse(obj => {
-        if ((obj as THREE.Mesh).geometry)
-          (obj as THREE.Mesh).geometry.dispose();
-        const material = (obj as THREE.Mesh).material;
-        if (material) {
-          if (Array.isArray(material)) {
-            material.forEach(m => m.dispose());
-          } else {
-            material.dispose();
-          }
-        }
+      sunRoot.traverse(o => {
+        if ((o as THREE.Mesh).geometry) (o as THREE.Mesh).geometry.dispose();
+        const m = (o as any).material;
+        if (Array.isArray(m)) m.forEach(x => x.dispose());
+        else m?.dispose();
       });
     };
-  }, [canvasRef, events]);
+  }, [canvasRef]);
 
-  // Update marker visibility and animate on slider change
+  // update spots whenever `events` changes
   useEffect(() => {
-    // toggle visibility
-    markersRef.current.forEach((m, i) => (m.visible = i === selectedIdx));
-    // animate rotation to bring selected marker front
-    const group = groupRef.current;
-    if (group) {
-      const targetMarker = markersRef.current[selectedIdx];
-      const worldPos = new THREE.Vector3();
-      targetMarker?.getWorldPosition(worldPos);
-      // compute desired rotation angle around Y
-      const angle = Math.atan2(worldPos.x, worldPos.z);
-      gsap.to(group.rotation, { y: -angle, duration: 1 });
+    const sunRoot = sunRootRef.current;
+    const spotGroup = spotGroupRef.current;
+    if (!sunRoot || !spotGroup) return;
+
+    // clear old
+    spotGroup.clear();
+
+    // find the sphere mesh to project onto
+    const sphere = sunRoot.children.find(
+      c => (c as THREE.Mesh).geometry instanceof THREE.SphereGeometry,
+    ) as THREE.Mesh;
+
+    // recreate decals
+    for (const ev of events) {
+      const { x, y, z } = convertLatLonToXYZ(ev.lat, ev.lon, SUN_RADIUS);
+      const pos = new THREE.Vector3(x, y, z);
+      const orient = new THREE.Quaternion().setFromUnitVectors(
+        new THREE.Vector3(0, 0, 1),
+        pos.clone().normalize(),
+      );
+      const euler = new THREE.Euler().setFromQuaternion(orient);
+
+      // world radius = R * sin(angular)
+      const r = SUN_RADIUS * Math.sin(ev.sizeRad);
+      const dia = Math.max(2 * r, MIN_DIAMETER);
+
+      const geo = new DecalGeometry(
+        sphere,
+        pos,
+        euler,
+        new THREE.Vector3(dia, dia, 0.2),
+      );
+      const decalMat = generateDecalMaterial();
+      const mesh = new THREE.Mesh(geo, decalMat);
+      spotGroup.add(mesh);
     }
-  }, [selectedIdx]);
+  }, [events]);
 
   return {
     cameraRef,
