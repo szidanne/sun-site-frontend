@@ -6466,6 +6466,2072 @@
             "area_km2": 370800992
           }
         ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250506_032506_2025.05.05T22.45.34.800_137",
+            "type": "SS",
+            "start": "2025-05-05T22:45:34",
+            "end": "2025-05-06T04:45:34",
+            "hv_hpc_x": -124.7693009,
+            "hv_hpc_y": 10.788723,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 311393984
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250506_032454_2025.05.05T22.45.34.800_38",
+            "type": "SS",
+            "start": "2025-05-05T22:45:34",
+            "end": "2025-05-06T04:45:34",
+            "hv_hpc_x": -117.790601,
+            "hv_hpc_y": 7.3605421,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 5530849792
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250506_032455_2025.05.05T22.45.34.800_50",
+            "type": "SS",
+            "start": "2025-05-05T22:45:34",
+            "end": "2025-05-06T04:45:34",
+            "hv_hpc_x": -150.296427,
+            "hv_hpc_y": 6.7483863,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 363228000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250506_032447_2025.05.05T22.45.34.800_16",
+            "type": "SS",
+            "start": "2025-05-05T22:45:34",
+            "end": "2025-05-06T04:45:34",
+            "hv_hpc_x": -175.381396,
+            "hv_hpc_y": -10.104159,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 341390016
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250507_010820_2025.05.06T22.45.34.900_97",
+            "type": "SS",
+            "start": "2025-05-06T22:45:34",
+            "end": "2025-05-07T04:45:34",
+            "hv_hpc_x": -121.016948,
+            "hv_hpc_y": 8.7721479,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 732156992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250507_010812_2025.05.06T22.45.34.900_68",
+            "type": "SS",
+            "start": "2025-05-06T22:45:34",
+            "end": "2025-05-07T04:45:34",
+            "hv_hpc_x": -150.5106643,
+            "hv_hpc_y": 6.9214959,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 468196000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250507_010815_2025.05.06T22.45.34.900_87",
+            "type": "SS",
+            "start": "2025-05-06T22:45:34",
+            "end": "2025-05-07T04:45:34",
+            "hv_hpc_x": -146.0186971,
+            "hv_hpc_y": 6.8121621,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 325408992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250507_010807_2025.05.06T22.45.34.900_45",
+            "type": "SS",
+            "start": "2025-05-06T22:45:34",
+            "end": "2025-05-07T04:45:34",
+            "hv_hpc_x": -116.883768,
+            "hv_hpc_y": 6.6259986,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 4176580096
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250507_010757_2025.05.06T22.45.34.900_9",
+            "type": "SS",
+            "start": "2025-05-06T22:45:34",
+            "end": "2025-05-07T04:45:34",
+            "hv_hpc_x": -175.055181,
+            "hv_hpc_y": -9.7935562,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 425982016
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250508_010934_2025.05.07T22.45.35.000_117",
+            "type": "SS",
+            "start": "2025-05-07T22:45:35",
+            "end": "2025-05-08T04:45:35",
+            "hv_hpc_x": -120.671494,
+            "hv_hpc_y": 8.5744399,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 543390976
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250508_010930_2025.05.07T22.45.35.000_106",
+            "type": "SS",
+            "start": "2025-05-07T22:45:35",
+            "end": "2025-05-08T04:45:35",
+            "hv_hpc_x": -145.659963,
+            "hv_hpc_y": 6.6323367,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 446288000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250508_010925_2025.05.07T22.45.35.000_76",
+            "type": "SS",
+            "start": "2025-05-07T22:45:35",
+            "end": "2025-05-08T04:45:35",
+            "hv_hpc_x": -116.718355,
+            "hv_hpc_y": 6.6371637,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 4142749952
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250508_010906_2025.05.07T22.45.35.000_26",
+            "type": "SS",
+            "start": "2025-05-07T22:45:35",
+            "end": "2025-05-08T04:45:35",
+            "hv_hpc_x": -174.509671,
+            "hv_hpc_y": -9.5947664,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 391872000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250509_012209_2025.05.08T22.45.35.100_82",
+            "type": "SS",
+            "start": "2025-05-08T22:45:35",
+            "end": "2025-05-09T04:45:35",
+            "hv_hpc_x": -120.413254,
+            "hv_hpc_y": 8.4723855,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 416955008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250509_012210_2025.05.08T22.45.35.100_84",
+            "type": "SS",
+            "start": "2025-05-08T22:45:35",
+            "end": "2025-05-09T04:45:35",
+            "hv_hpc_x": -145.089126,
+            "hv_hpc_y": 6.926477,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 377507008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250509_012204_2025.05.08T22.45.35.100_60",
+            "type": "SS",
+            "start": "2025-05-08T22:45:35",
+            "end": "2025-05-09T04:45:35",
+            "hv_hpc_x": -116.481321,
+            "hv_hpc_y": 6.3433436,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 3518599936
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250509_012151_2025.05.08T22.45.35.100_27",
+            "type": "SS",
+            "start": "2025-05-08T22:45:35",
+            "end": "2025-05-09T04:45:35",
+            "hv_hpc_x": -174.3157921,
+            "hv_hpc_y": -9.7544255,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 417748992
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250510_012216_2025.05.09T22.45.35.200_68",
+            "type": "SS",
+            "start": "2025-05-09T22:45:35",
+            "end": "2025-05-10T04:45:35",
+            "hv_hpc_x": -116.850921,
+            "hv_hpc_y": 6.7157972,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 3954720000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250510_012210_2025.05.09T22.45.35.200_34",
+            "type": "SS",
+            "start": "2025-05-09T22:45:35",
+            "end": "2025-05-10T04:45:35",
+            "hv_hpc_x": -174.3091585,
+            "hv_hpc_y": -9.5565695,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 411879008
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250511_010904_2025.05.10T22.45.35.300_29",
+            "type": "SS",
+            "start": "2025-05-10T22:45:35",
+            "end": "2025-05-11T04:45:35",
+            "hv_hpc_x": -173.985057,
+            "hv_hpc_y": -9.3775777,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 397960000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250512_204041_2025.05.11T22.45.35.500_51",
+            "type": "SS",
+            "start": "2025-05-11T22:45:35",
+            "end": "2025-05-12T04:45:35",
+            "hv_hpc_x": -173.322218,
+            "hv_hpc_y": -9.1872339,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 369494016
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250513_010238_2025.05.12T22.45.35.600_25",
+            "type": "SS",
+            "start": "2025-05-12T22:45:35",
+            "end": "2025-05-13T04:45:35",
+            "hv_hpc_x": -172.918749,
+            "hv_hpc_y": -9.4632143,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 330748992
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250514_024125_2025.05.13T22.45.35.700_74",
+            "type": "SS",
+            "start": "2025-05-13T22:45:35",
+            "end": "2025-05-14T04:45:35",
+            "hv_hpc_x": 60.160128,
+            "hv_hpc_y": 14.486042,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 773062976
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250515_010414_2025.05.14T22.45.35.800_70",
+            "type": "SS",
+            "start": "2025-05-14T22:45:35",
+            "end": "2025-05-15T04:45:35",
+            "hv_hpc_x": 60.202334,
+            "hv_hpc_y": 14.410327,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 910030976
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250516_010044_2025.05.15T22.45.35.900_49",
+            "type": "SS",
+            "start": "2025-05-15T22:45:35",
+            "end": "2025-05-16T04:45:35",
+            "hv_hpc_x": 60.257185,
+            "hv_hpc_y": 14.245094,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 983992000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250517_010217_2025.05.16T22.45.36.000_64",
+            "type": "SS",
+            "start": "2025-05-16T22:45:36",
+            "end": "2025-05-17T04:45:36",
+            "hv_hpc_x": 60.469484,
+            "hv_hpc_y": 14.026706,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 959832000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250518_010103_2025.05.17T22.45.36.100_88",
+            "type": "SS",
+            "start": "2025-05-17T22:45:36",
+            "end": "2025-05-18T04:45:36",
+            "hv_hpc_x": 60.699083,
+            "hv_hpc_y": 13.843529,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 930796032
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250519_010552_2025.05.18T22.45.36.200_86",
+            "type": "SS",
+            "start": "2025-05-18T22:45:36",
+            "end": "2025-05-19T04:45:36",
+            "hv_hpc_x": 60.8331294,
+            "hv_hpc_y": 13.693299,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 941318016
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250520_013100_2025.05.19T22.45.36.300_77",
+            "type": "SS",
+            "start": "2025-05-19T22:45:36",
+            "end": "2025-05-20T04:45:36",
+            "hv_hpc_x": 60.864159,
+            "hv_hpc_y": 13.647436,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 920982016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250520_013052_2025.05.19T22.45.36.300_5",
+            "type": "SS",
+            "start": "2025-05-19T22:45:36",
+            "end": "2025-05-20T04:45:36",
+            "hv_hpc_x": -22.908046,
+            "hv_hpc_y": -13.645482,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 365883008
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250521_012201_2025.05.20T22.45.36.400_83",
+            "type": "SS",
+            "start": "2025-05-20T22:45:36",
+            "end": "2025-05-21T04:45:36",
+            "hv_hpc_x": 60.930767,
+            "hv_hpc_y": 13.676669,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 909478976
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250521_012150_2025.05.20T22.45.36.400_1",
+            "type": "SS",
+            "start": "2025-05-20T22:45:36",
+            "end": "2025-05-21T04:45:36",
+            "hv_hpc_x": -22.572859,
+            "hv_hpc_y": -13.727466,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 431456992
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250522_013932_2025.05.21T22.45.36.500_92",
+            "type": "SS",
+            "start": "2025-05-21T22:45:36",
+            "end": "2025-05-22T04:45:36",
+            "hv_hpc_x": 60.993076,
+            "hv_hpc_y": 13.804663,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 928768000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250522_013918_2025.05.21T22.45.36.500_3",
+            "type": "SS",
+            "start": "2025-05-21T22:45:36",
+            "end": "2025-05-22T04:45:36",
+            "hv_hpc_x": -22.213137,
+            "hv_hpc_y": -13.652038,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 442792992
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250523_010316_2025.05.22T22.45.36.600_102",
+            "type": "SS",
+            "start": "2025-05-22T22:45:36",
+            "end": "2025-05-23T04:45:36",
+            "hv_hpc_x": 61.0102808,
+            "hv_hpc_y": 13.93899,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 780646976
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250523_010303_2025.05.22T22.45.36.600_12",
+            "type": "SS",
+            "start": "2025-05-22T22:45:36",
+            "end": "2025-05-23T04:45:36",
+            "hv_hpc_x": -22.0270622,
+            "hv_hpc_y": -13.427356,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 474547008
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250524_010213_2025.05.23T22.45.36.700_145",
+            "type": "SS",
+            "start": "2025-05-23T22:45:36",
+            "end": "2025-05-24T04:45:36",
+            "hv_hpc_x": 61.030426,
+            "hv_hpc_y": 14.012423,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 634372992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250524_010156_2025.05.23T22.45.36.700_23",
+            "type": "SS",
+            "start": "2025-05-23T22:45:36",
+            "end": "2025-05-24T04:45:36",
+            "hv_hpc_x": -21.821445,
+            "hv_hpc_y": -13.254582,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 497640000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250525_010351_2025.05.24T22.45.36.800_70",
+            "type": "SS",
+            "start": "2025-05-24T22:45:36",
+            "end": "2025-05-25T04:45:36",
+            "hv_hpc_x": 22.377363,
+            "hv_hpc_y": -4.8027381,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 505388000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250525_010343_2025.05.24T22.45.36.800_14",
+            "type": "SS",
+            "start": "2025-05-24T22:45:36",
+            "end": "2025-05-25T04:45:36",
+            "hv_hpc_x": -21.78521589,
+            "hv_hpc_y": -13.101417,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 489936000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250526_010300_2025.05.25T22.45.36.900_96",
+            "type": "SS",
+            "start": "2025-05-25T22:45:36",
+            "end": "2025-05-26T04:45:36",
+            "hv_hpc_x": 23.399925,
+            "hv_hpc_y": -4.9908642,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 711048000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250526_010254_2025.05.25T22.45.36.900_43",
+            "type": "SS",
+            "start": "2025-05-25T22:45:36",
+            "end": "2025-05-26T04:45:36",
+            "hv_hpc_x": -21.708317,
+            "hv_hpc_y": -13.018483,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 486095008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250526_010250_2025.05.25T22.45.36.900_21",
+            "type": "SS",
+            "start": "2025-05-25T22:45:36",
+            "end": "2025-05-26T04:45:36",
+            "hv_hpc_x": -102.576342,
+            "hv_hpc_y": -13.537369,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 815203968
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250527_005501_2025.05.26T22.45.37.000_105",
+            "type": "SS",
+            "start": "2025-05-26T22:45:37",
+            "end": "2025-05-27T04:45:37",
+            "hv_hpc_x": -114.659689,
+            "hv_hpc_y": 8.3540544,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1307360000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250527_005456_2025.05.26T22.45.37.000_86",
+            "type": "SS",
+            "start": "2025-05-26T22:45:37",
+            "end": "2025-05-27T04:45:37",
+            "hv_hpc_x": 24.474721,
+            "hv_hpc_y": -4.6556583,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 503868000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250527_005451_2025.05.26T22.45.37.000_49",
+            "type": "SS",
+            "start": "2025-05-26T22:45:37",
+            "end": "2025-05-27T04:45:37",
+            "hv_hpc_x": -21.565431,
+            "hv_hpc_y": -13.043197,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 461480000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250527_005450_2025.05.26T22.45.37.000_40",
+            "type": "SS",
+            "start": "2025-05-26T22:45:37",
+            "end": "2025-05-27T04:45:37",
+            "hv_hpc_x": -106.538932,
+            "hv_hpc_y": -13.31299,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 467273984
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250527_005448_2025.05.26T22.45.37.000_31",
+            "type": "SS",
+            "start": "2025-05-26T22:45:37",
+            "end": "2025-05-27T04:45:37",
+            "hv_hpc_x": -102.46106,
+            "hv_hpc_y": -13.541926,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1186710016
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250528_022755_2025.05.27T22.45.37.100_99",
+            "type": "SS",
+            "start": "2025-05-27T22:45:37",
+            "end": "2025-05-28T04:45:37",
+            "hv_hpc_x": -114.622609,
+            "hv_hpc_y": 8.4896971,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 2087760000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250528_022747_2025.05.27T22.45.37.100_59",
+            "type": "SS",
+            "start": "2025-05-27T22:45:37",
+            "end": "2025-05-28T04:45:37",
+            "hv_hpc_x": -21.499421,
+            "hv_hpc_y": -13.097137,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 477718016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250528_022744_2025.05.27T22.45.37.100_37",
+            "type": "SS",
+            "start": "2025-05-27T22:45:37",
+            "end": "2025-05-28T04:45:37",
+            "hv_hpc_x": -102.769148,
+            "hv_hpc_y": -13.503436,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1358739968
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250528_022743_2025.05.27T22.45.37.100_34",
+            "type": "SS",
+            "start": "2025-05-27T22:45:37",
+            "end": "2025-05-28T04:45:37",
+            "hv_hpc_x": -106.632287,
+            "hv_hpc_y": -13.895849,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 557689984
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250529_010624_2025.05.28T22.45.37.100_113",
+            "type": "SS",
+            "start": "2025-05-28T22:45:37",
+            "end": "2025-05-29T04:45:37",
+            "hv_hpc_x": -121.297506,
+            "hv_hpc_y": 9.8854608,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 306239008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250529_010622_2025.05.28T22.45.37.100_94",
+            "type": "SS",
+            "start": "2025-05-28T22:45:37",
+            "end": "2025-05-29T04:45:37",
+            "hv_hpc_x": -114.545819,
+            "hv_hpc_y": 8.63262,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 2649799936
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250529_010611_2025.05.28T22.45.37.100_34",
+            "type": "SS",
+            "start": "2025-05-28T22:45:37",
+            "end": "2025-05-29T04:45:37",
+            "hv_hpc_x": -21.31492,
+            "hv_hpc_y": -13.046145,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 431139008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250529_010609_2025.05.28T22.45.37.100_21",
+            "type": "SS",
+            "start": "2025-05-28T22:45:37",
+            "end": "2025-05-29T04:45:37",
+            "hv_hpc_x": -104.37145,
+            "hv_hpc_y": -13.893991,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 2166089984
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250530_011954_2025.05.29T22.45.37.200_129",
+            "type": "SS",
+            "start": "2025-05-29T22:45:37",
+            "end": "2025-05-30T04:45:37",
+            "hv_hpc_x": -114.655633,
+            "hv_hpc_y": 8.7563117,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 2287429888
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250530_011939_2025.05.29T22.45.37.200_27",
+            "type": "SS",
+            "start": "2025-05-29T22:45:37",
+            "end": "2025-05-30T04:45:37",
+            "hv_hpc_x": -21.157115,
+            "hv_hpc_y": -12.948559,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 375350016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250530_011937_2025.05.29T22.45.37.200_5",
+            "type": "SS",
+            "start": "2025-05-29T22:45:37",
+            "end": "2025-05-30T04:45:37",
+            "hv_hpc_x": -104.528231,
+            "hv_hpc_y": -13.853177,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1922850048
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250531_010236_2025.05.30T22.45.37.300_136",
+            "type": "SS",
+            "start": "2025-05-30T22:45:37",
+            "end": "2025-05-31T04:45:37",
+            "hv_hpc_x": -116.037594,
+            "hv_hpc_y": 9.514304,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1419820032
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250531_010232_2025.05.30T22.45.37.300_117",
+            "type": "SS",
+            "start": "2025-05-30T22:45:37",
+            "end": "2025-05-31T04:45:37",
+            "hv_hpc_x": -111.883312,
+            "hv_hpc_y": 8.2102415,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 656425984
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250531_010215_2025.05.30T22.45.37.300_1",
+            "type": "SS",
+            "start": "2025-05-30T22:45:37",
+            "end": "2025-05-31T04:45:37",
+            "hv_hpc_x": -104.6741759,
+            "hv_hpc_y": -13.858377,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1717900032
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250602_074039_2025.05.31T22.45.37.400_124",
+            "type": "SS",
+            "start": "2025-05-31T22:45:37",
+            "end": "2025-06-01T04:45:37",
+            "hv_hpc_x": -115.9647193,
+            "hv_hpc_y": 9.5919576,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1247529984
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250602_074037_2025.05.31T22.45.37.400_113",
+            "type": "SS",
+            "start": "2025-05-31T22:45:37",
+            "end": "2025-06-01T04:45:37",
+            "hv_hpc_x": -111.496807,
+            "hv_hpc_y": 8.3712357,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 633427008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250602_074020_2025.05.31T22.45.37.400_10",
+            "type": "SS",
+            "start": "2025-05-31T22:45:37",
+            "end": "2025-06-01T04:45:37",
+            "hv_hpc_x": -103.772393,
+            "hv_hpc_y": -13.371941,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 968020992
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250602_100954_2025.06.01T22.45.37.500_118",
+            "type": "SS",
+            "start": "2025-06-01T22:45:37",
+            "end": "2025-06-02T04:45:37",
+            "hv_hpc_x": -116.042989,
+            "hv_hpc_y": 9.6072089,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 929870016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250602_100951_2025.06.01T22.45.37.500_103",
+            "type": "SS",
+            "start": "2025-06-01T22:45:37",
+            "end": "2025-06-02T04:45:37",
+            "hv_hpc_x": -111.100705,
+            "hv_hpc_y": 8.5527069,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 620731008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250602_100937_2025.06.01T22.45.37.500_3",
+            "type": "SS",
+            "start": "2025-06-01T22:45:37",
+            "end": "2025-06-02T04:45:37",
+            "hv_hpc_x": -104.585947,
+            "hv_hpc_y": -13.461313,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1245319936
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250603_012016_2025.06.02T22.45.37.500_112",
+            "type": "SS",
+            "start": "2025-06-02T22:45:37",
+            "end": "2025-06-03T04:45:37",
+            "hv_hpc_x": -115.496595,
+            "hv_hpc_y": 9.2114798,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 442688992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250603_012015_2025.06.02T22.45.37.500_105",
+            "type": "SS",
+            "start": "2025-06-02T22:45:37",
+            "end": "2025-06-03T04:45:37",
+            "hv_hpc_x": -110.701395,
+            "hv_hpc_y": 8.6773023,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 573582976
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250603_012003_2025.06.02T22.45.37.500_17",
+            "type": "SS",
+            "start": "2025-06-02T22:45:37",
+            "end": "2025-06-03T04:45:37",
+            "hv_hpc_x": -104.25639,
+            "hv_hpc_y": -13.542942,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 977124032
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250604_005450_2025.06.03T22.45.37.600_61",
+            "type": "SS",
+            "start": "2025-06-03T22:45:37",
+            "end": "2025-06-04T04:45:37",
+            "hv_hpc_x": -110.211668,
+            "hv_hpc_y": 8.65659,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 487644000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250604_005444_2025.06.03T22.45.37.600_20",
+            "type": "SS",
+            "start": "2025-06-03T22:45:37",
+            "end": "2025-06-04T04:45:37",
+            "hv_hpc_x": -103.946864,
+            "hv_hpc_y": -13.21232,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 757790016
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250610_010153_2025.06.09T22.45.38.000_296",
+            "type": "SS",
+            "start": "2025-06-09T22:45:38",
+            "end": "2025-06-10T04:45:38",
+            "hv_hpc_x": 59.898491,
+            "hv_hpc_y": 13.816085,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 436526016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250610_010134_2025.06.09T22.45.38.000_141",
+            "type": "SS",
+            "start": "2025-06-09T22:45:38",
+            "end": "2025-06-10T04:45:38",
+            "hv_hpc_x": 131.5320215,
+            "hv_hpc_y": -14.884641,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 371616992
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250611_010309_2025.06.10T22.45.38.000_259",
+            "type": "SS",
+            "start": "2025-06-10T22:45:38",
+            "end": "2025-06-11T04:45:38",
+            "hv_hpc_x": 59.810025,
+            "hv_hpc_y": 13.90759,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 591868992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250611_010254_2025.06.10T22.45.38.000_142",
+            "type": "SS",
+            "start": "2025-06-10T22:45:38",
+            "end": "2025-06-11T04:45:38",
+            "hv_hpc_x": 133.073069,
+            "hv_hpc_y": -14.562728,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 656280000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250611_010247_2025.06.10T22.45.38.000_96",
+            "type": "SS",
+            "start": "2025-06-10T22:45:38",
+            "end": "2025-06-11T04:45:38",
+            "hv_hpc_x": 152.571694,
+            "hv_hpc_y": -15.28875,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1232409984
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250613_010249_2025.06.12T22.45.38.100_233",
+            "type": "SS",
+            "start": "2025-06-12T22:45:38",
+            "end": "2025-06-13T04:45:38",
+            "hv_hpc_x": 24.925298,
+            "hv_hpc_y": 19.407565,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 548046976
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250613_010244_2025.06.12T22.45.38.100_204",
+            "type": "SS",
+            "start": "2025-06-12T22:45:38",
+            "end": "2025-06-13T04:45:38",
+            "hv_hpc_x": 59.328427,
+            "hv_hpc_y": 14.071806,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 510368992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250613_010223_2025.06.12T22.45.38.100_58",
+            "type": "SS",
+            "start": "2025-06-12T22:45:38",
+            "end": "2025-06-13T04:45:38",
+            "hv_hpc_x": 151.920442,
+            "hv_hpc_y": -14.839124,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 954326016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250613_010225_2025.06.12T22.45.38.100_60",
+            "type": "SS",
+            "start": "2025-06-12T22:45:38",
+            "end": "2025-06-13T04:45:38",
+            "hv_hpc_x": 134.541293,
+            "hv_hpc_y": -14.636709,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1034529984
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250613_010219_2025.06.12T22.45.38.100_32",
+            "type": "SS",
+            "start": "2025-06-12T22:45:38",
+            "end": "2025-06-13T04:45:38",
+            "hv_hpc_x": 126.282426,
+            "hv_hpc_y": -16.539108,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 366899008
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250614_010348_2025.06.13T22.45.38.200_244",
+            "type": "SS",
+            "start": "2025-06-13T22:45:38",
+            "end": "2025-06-14T04:45:38",
+            "hv_hpc_x": 25.14749,
+            "hv_hpc_y": 19.444642,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 584262976
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250614_010337_2025.06.13T22.45.38.200_164",
+            "type": "SS",
+            "start": "2025-06-13T22:45:38",
+            "end": "2025-06-14T04:45:38",
+            "hv_hpc_x": 59.104201,
+            "hv_hpc_y": 14.182047,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 492108000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250614_010317_2025.06.13T22.45.38.200_18",
+            "type": "SS",
+            "start": "2025-06-13T22:45:38",
+            "end": "2025-06-14T04:45:38",
+            "hv_hpc_x": 135.186763,
+            "hv_hpc_y": -14.956649,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 994939008
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250615_010357_2025.06.14T22.45.38.200_210",
+            "type": "SS",
+            "start": "2025-06-14T22:45:38",
+            "end": "2025-06-15T04:45:38",
+            "hv_hpc_x": 25.105256,
+            "hv_hpc_y": 19.360246,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 585201024
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250615_010350_2025.06.14T22.45.38.200_157",
+            "type": "SS",
+            "start": "2025-06-14T22:45:38",
+            "end": "2025-06-15T04:45:38",
+            "hv_hpc_x": 31.452904,
+            "hv_hpc_y": 18.202094,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1187360000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250615_010346_2025.06.14T22.45.38.200_142",
+            "type": "SS",
+            "start": "2025-06-14T22:45:38",
+            "end": "2025-06-15T04:45:38",
+            "hv_hpc_x": 37.452153,
+            "hv_hpc_y": 16.49742,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 539819008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250615_010342_2025.06.14T22.45.38.200_128",
+            "type": "SS",
+            "start": "2025-06-14T22:45:38",
+            "end": "2025-06-15T04:45:38",
+            "hv_hpc_x": 58.9977278,
+            "hv_hpc_y": 14.28135,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 454183008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250615_010335_2025.06.14T22.45.38.200_81",
+            "type": "SS",
+            "start": "2025-06-14T22:45:38",
+            "end": "2025-06-15T04:45:38",
+            "hv_hpc_x": 117.243477,
+            "hv_hpc_y": 5.187184,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 372983008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250615_010326_2025.06.14T22.45.38.200_27",
+            "type": "SS",
+            "start": "2025-06-14T22:45:38",
+            "end": "2025-06-15T04:45:38",
+            "hv_hpc_x": 36.569825,
+            "hv_hpc_y": -12.223311,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 331894016
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250618_010838_2025.06.17T22.45.38.400_167",
+            "type": "SS",
+            "start": "2025-06-17T22:45:38",
+            "end": "2025-06-18T04:45:38",
+            "hv_hpc_x": 24.5314002,
+            "hv_hpc_y": 19.381026,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 515114016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250618_010831_2025.06.17T22.45.38.400_117",
+            "type": "SS",
+            "start": "2025-06-17T22:45:38",
+            "end": "2025-06-18T04:45:38",
+            "hv_hpc_x": 28.9253388,
+            "hv_hpc_y": 19.021407,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1528349952
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250618_010823_2025.06.17T22.45.38.400_66",
+            "type": "SS",
+            "start": "2025-06-17T22:45:38",
+            "end": "2025-06-18T04:45:38",
+            "hv_hpc_x": 35.780319,
+            "hv_hpc_y": 16.232423,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 538547968
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250618_010820_2025.06.17T22.45.38.400_52",
+            "type": "SS",
+            "start": "2025-06-17T22:45:38",
+            "end": "2025-06-18T04:45:38",
+            "hv_hpc_x": 59.15071,
+            "hv_hpc_y": 14.526235,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 372516992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250618_010814_2025.06.17T22.45.38.400_6",
+            "type": "SS",
+            "start": "2025-06-17T22:45:38",
+            "end": "2025-06-18T04:45:38",
+            "hv_hpc_x": 37.460245,
+            "hv_hpc_y": -11.932111,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 306700000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250619_010134_2025.06.18T22.45.38.400_153",
+            "type": "SS",
+            "start": "2025-06-18T22:45:38",
+            "end": "2025-06-19T04:45:38",
+            "hv_hpc_x": 24.2536885,
+            "hv_hpc_y": 19.448445,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 484796000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250619_010131_2025.06.18T22.45.38.400_140",
+            "type": "SS",
+            "start": "2025-06-18T22:45:38",
+            "end": "2025-06-19T04:45:38",
+            "hv_hpc_x": 28.0109575,
+            "hv_hpc_y": 19.289642,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1135920000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250619_010126_2025.06.18T22.45.38.400_105",
+            "type": "SS",
+            "start": "2025-06-18T22:45:38",
+            "end": "2025-06-19T04:45:38",
+            "hv_hpc_x": 35.2123805,
+            "hv_hpc_y": 16.767151,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 867526016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250619_010123_2025.06.18T22.45.38.400_79",
+            "type": "SS",
+            "start": "2025-06-18T22:45:38",
+            "end": "2025-06-19T04:45:38",
+            "hv_hpc_x": 58.9841135,
+            "hv_hpc_y": 14.419097,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 362992000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250619_010111_2025.06.18T22.45.38.400_1",
+            "type": "SS",
+            "start": "2025-06-18T22:45:38",
+            "end": "2025-06-19T04:45:38",
+            "hv_hpc_x": -54.8196285,
+            "hv_hpc_y": -15.287706,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 350239008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250619_010111_2025.06.18T22.45.38.400_0",
+            "type": "SS",
+            "start": "2025-06-18T22:45:38",
+            "end": "2025-06-19T04:45:38",
+            "hv_hpc_x": -61.8512205,
+            "hv_hpc_y": -15.464654,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 350396000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250620_010400_2025.06.19T22.45.38.400_128",
+            "type": "SS",
+            "start": "2025-06-19T22:45:38",
+            "end": "2025-06-20T04:45:38",
+            "hv_hpc_x": 23.867469,
+            "hv_hpc_y": 19.687759,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 469052992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250620_010358_2025.06.19T22.45.38.400_115",
+            "type": "SS",
+            "start": "2025-06-19T22:45:38",
+            "end": "2025-06-20T04:45:38",
+            "hv_hpc_x": 27.955555,
+            "hv_hpc_y": 19.476941,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1152659968
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250620_010353_2025.06.19T22.45.38.400_80",
+            "type": "SS",
+            "start": "2025-06-19T22:45:38",
+            "end": "2025-06-20T04:45:38",
+            "hv_hpc_x": 37.603694,
+            "hv_hpc_y": 16.578069,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 621313984
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250620_010341_2025.06.19T22.45.38.400_2",
+            "type": "SS",
+            "start": "2025-06-19T22:45:38",
+            "end": "2025-06-20T04:45:38",
+            "hv_hpc_x": -54.832808,
+            "hv_hpc_y": -15.225558,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 561892032
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_054352_2025.06.20T22.45.38.500_121",
+            "type": "SS",
+            "start": "2025-06-20T22:45:38",
+            "end": "2025-06-21T04:45:38",
+            "hv_hpc_x": 23.643682,
+            "hv_hpc_y": 19.802848,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 464476000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_054350_2025.06.20T22.45.38.500_113",
+            "type": "SS",
+            "start": "2025-06-20T22:45:38",
+            "end": "2025-06-21T04:45:38",
+            "hv_hpc_x": 27.755602,
+            "hv_hpc_y": 19.447685,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 1079090048
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_054346_2025.06.20T22.45.38.500_93",
+            "type": "SS",
+            "start": "2025-06-20T22:45:38",
+            "end": "2025-06-21T04:45:38",
+            "hv_hpc_x": 38.765325,
+            "hv_hpc_y": 16.553903,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 319688000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_054340_2025.06.20T22.45.38.500_42",
+            "type": "SS",
+            "start": "2025-06-20T22:45:38",
+            "end": "2025-06-21T04:45:38",
+            "hv_hpc_x": -69.365675,
+            "hv_hpc_y": -12.595311,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 345745984
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_054334_2025.06.20T22.45.38.500_3",
+            "type": "SS",
+            "start": "2025-06-20T22:45:38",
+            "end": "2025-06-21T04:45:38",
+            "hv_hpc_x": -55.061981,
+            "hv_hpc_y": -15.127208,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 600153024
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_054335_2025.06.20T22.45.38.500_5",
+            "type": "SS",
+            "start": "2025-06-20T22:45:38",
+            "end": "2025-06-21T04:45:38",
+            "hv_hpc_x": -61.505936,
+            "hv_hpc_y": -15.529273,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 312910016
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_055505_2025.06.21T22.45.38.500_148",
+            "type": "SS",
+            "start": "2025-06-21T22:45:38",
+            "end": "2025-06-22T04:45:38",
+            "hv_hpc_x": 23.516925,
+            "hv_hpc_y": 19.910325,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 458550016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_055504_2025.06.21T22.45.38.500_147",
+            "type": "SS",
+            "start": "2025-06-21T22:45:38",
+            "end": "2025-06-22T04:45:38",
+            "hv_hpc_x": 27.457546,
+            "hv_hpc_y": 19.617786,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 944236992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_055452_2025.06.21T22.45.38.500_44",
+            "type": "SS",
+            "start": "2025-06-21T22:45:38",
+            "end": "2025-06-22T04:45:38",
+            "hv_hpc_x": -69.3382810000001,
+            "hv_hpc_y": -12.331771,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 460880992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250622_055445_2025.06.21T22.45.38.500_9",
+            "type": "SS",
+            "start": "2025-06-21T22:45:38",
+            "end": "2025-06-22T04:45:38",
+            "hv_hpc_x": -55.209113,
+            "hv_hpc_y": -15.143935,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 625308032
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250623_010435_2025.06.22T22.45.38.600_168",
+            "type": "SS",
+            "start": "2025-06-22T22:45:38",
+            "end": "2025-06-23T04:45:38",
+            "hv_hpc_x": 23.441476,
+            "hv_hpc_y": 20.206237,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 351011008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250623_010435_2025.06.22T22.45.38.600_167",
+            "type": "SS",
+            "start": "2025-06-22T22:45:38",
+            "end": "2025-06-23T04:45:38",
+            "hv_hpc_x": 27.020529,
+            "hv_hpc_y": 19.858388,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 747724032
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250623_010420_2025.06.22T22.45.38.600_55",
+            "type": "SS",
+            "start": "2025-06-22T22:45:38",
+            "end": "2025-06-23T04:45:38",
+            "hv_hpc_x": -69.408716,
+            "hv_hpc_y": -12.244896,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 645003008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250623_010414_2025.06.22T22.45.38.600_9",
+            "type": "SS",
+            "start": "2025-06-22T22:45:38",
+            "end": "2025-06-23T04:45:38",
+            "hv_hpc_x": -55.593858,
+            "hv_hpc_y": -15.171675,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 775195008
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250624_010100_2025.06.23T22.45.38.600_58",
+            "type": "SS",
+            "start": "2025-06-23T22:45:38",
+            "end": "2025-06-24T04:45:38",
+            "hv_hpc_x": -53.610911,
+            "hv_hpc_y": -12.011078,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 305931008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250624_010058_2025.06.23T22.45.38.600_49",
+            "type": "SS",
+            "start": "2025-06-23T22:45:38",
+            "end": "2025-06-24T04:45:38",
+            "hv_hpc_x": -69.515966,
+            "hv_hpc_y": -12.307036,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 548473984
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250624_010053_2025.06.23T22.45.38.600_13",
+            "type": "SS",
+            "start": "2025-06-23T22:45:38",
+            "end": "2025-06-24T04:45:38",
+            "hv_hpc_x": -55.5958935,
+            "hv_hpc_y": -15.214322,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 744726016
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250625_011102_2025.06.24T22.45.38.600_53",
+            "type": "SS",
+            "start": "2025-06-24T22:45:38",
+            "end": "2025-06-25T04:45:38",
+            "hv_hpc_x": -68.9541697,
+            "hv_hpc_y": -12.837005,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 422007008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250625_011056_2025.06.24T22.45.38.600_9",
+            "type": "SS",
+            "start": "2025-06-24T22:45:38",
+            "end": "2025-06-25T04:45:38",
+            "hv_hpc_x": -55.565984,
+            "hv_hpc_y": -15.366673,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 758510976
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250626_012053_2025.06.25T22.50.53.600_123",
+            "type": "SS",
+            "start": "2025-06-25T22:50:53",
+            "end": "2025-06-26T04:50:53",
+            "hv_hpc_x": -61.084838,
+            "hv_hpc_y": 5.7062381,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 322235008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250626_012038_2025.06.25T22.50.53.600_4",
+            "type": "SS",
+            "start": "2025-06-25T22:50:53",
+            "end": "2025-06-26T04:50:53",
+            "hv_hpc_x": -55.248096,
+            "hv_hpc_y": -15.767353,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 645931008
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250627_014011_2025.06.26T22.50.53.700_161",
+            "type": "SS",
+            "start": "2025-06-26T22:50:53",
+            "end": "2025-06-27T04:50:53",
+            "hv_hpc_x": -140.024219,
+            "hv_hpc_y": 12.259662,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 419100992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250627_014004_2025.06.26T22.50.53.700_91",
+            "type": "SS",
+            "start": "2025-06-26T22:50:53",
+            "end": "2025-06-27T04:50:53",
+            "hv_hpc_x": -59.907646,
+            "hv_hpc_y": 5.6633535,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 406124000
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250627_013952_2025.06.26T22.50.53.700_6",
+            "type": "SS",
+            "start": "2025-06-26T22:50:53",
+            "end": "2025-06-27T04:50:53",
+            "hv_hpc_x": -54.619791,
+            "hv_hpc_y": -16.186097,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 467984000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250628_012200_2025.06.27T22.50.53.700_120",
+            "type": "SS",
+            "start": "2025-06-27T22:50:53",
+            "end": "2025-06-28T04:50:53",
+            "hv_hpc_x": -139.514987,
+            "hv_hpc_y": 11.786692,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 625142016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250628_012153_2025.06.27T22.50.53.700_67",
+            "type": "SS",
+            "start": "2025-06-27T22:50:53",
+            "end": "2025-06-28T04:50:53",
+            "hv_hpc_x": -59.543885,
+            "hv_hpc_y": 5.6058606,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 494987008
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250628_012144_2025.06.27T22.50.53.700_10",
+            "type": "SS",
+            "start": "2025-06-27T22:50:53",
+            "end": "2025-06-28T04:50:53",
+            "hv_hpc_x": -54.300922,
+            "hv_hpc_y": -16.448794,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 470667008
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250629_010853_2025.06.28T22.50.53.700_247",
+            "type": "SS",
+            "start": "2025-06-28T22:50:53",
+            "end": "2025-06-29T04:50:53",
+            "hv_hpc_x": 174.0398,
+            "hv_hpc_y": 21.06202,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 301338016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250629_010838_2025.06.28T22.50.53.700_105",
+            "type": "SS",
+            "start": "2025-06-28T22:50:53",
+            "end": "2025-06-29T04:50:53",
+            "hv_hpc_x": -138.819943,
+            "hv_hpc_y": 11.873067,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 500984992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250629_010833_2025.06.28T22.50.53.700_69",
+            "type": "SS",
+            "start": "2025-06-28T22:50:53",
+            "end": "2025-06-29T04:50:53",
+            "hv_hpc_x": -59.386382,
+            "hv_hpc_y": 5.7970435,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 352948992
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250701_011358_2025.06.30T22.53.08.700_217",
+            "type": "SS",
+            "start": "2025-06-30T22:53:08",
+            "end": "2025-07-01T04:53:08",
+            "hv_hpc_x": 173.945375,
+            "hv_hpc_y": 21.13976,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 322752992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250701_011349_2025.06.30T22.53.08.700_137",
+            "type": "SS",
+            "start": "2025-06-30T22:53:08",
+            "end": "2025-07-01T04:53:08",
+            "hv_hpc_x": -138.92973,
+            "hv_hpc_y": 11.838925,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 492590016
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250701_011340_2025.06.30T22.53.08.700_74",
+            "type": "SS",
+            "start": "2025-06-30T22:53:08",
+            "end": "2025-07-01T04:53:08",
+            "hv_hpc_x": 178.485336,
+            "hv_hpc_y": -5.1735052,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 307616000
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250704_011735_2025.07.03T22.53.08.700_184",
+            "type": "SS",
+            "start": "2025-07-03T22:53:08",
+            "end": "2025-07-04T04:53:08",
+            "hv_hpc_x": -138.508801,
+            "hv_hpc_y": 11.551874,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 468432992
+          }
+        ]
+      },
+      {
+        "name": "EGSO_SFC",
+        "contact": "sz2 at mssl dot ucl dot ac dot uk",
+        "url": "n/a",
+        "data": [
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250708_012229_2025.07.07T22.53.08.700_64",
+            "type": "SS",
+            "start": "2025-07-07T22:53:08",
+            "end": "2025-07-08T04:53:08",
+            "hv_hpc_x": 47.209644,
+            "hv_hpc_y": -8.1323413,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 306764992
+          },
+          {
+            "id": "ivo://helio-informatics.org/SS_EGSO_SFC_20250708_012223_2025.07.07T22.53.08.700_23",
+            "type": "SS",
+            "start": "2025-07-07T22:53:08",
+            "end": "2025-07-08T04:53:08",
+            "hv_hpc_x": -175.087229,
+            "hv_hpc_y": -21.61498,
+            "label": "",
+            "version": "0.20000000298023224",
+            "pin": "SS",
+            "area_km2": 338480992
+          }
+        ]
       }
     ]
   }

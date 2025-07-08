@@ -93,7 +93,7 @@ async function fetchHvEvents(start, end) {
 
 (async () => {
   const start = new Date('2025-01-01');
-  const end = new Date('2025-05-05');
+  const end = new Date('2025-07-08');
 
   console.log(
     `🚀 Fetching from ${start.toISOString()} to ${end.toISOString()}`,
